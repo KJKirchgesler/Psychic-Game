@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Psychic Game Pseudocode</title>
+</head>
+
+<body>
+
+  <h1>Psychic Game Pseudocode</h1>
+
+  <div id="container">
+      <h2>Initial Scores to be set</h2>
+      <ul>
+      <li>Each game starts with 0 wins.</li>
+      <li>Each game starts with 0 losses.</li>
+      <li>Game starts with 9 guesses.</li>
+    </ul>
+     
+    <h2>Game Rules</h2>
+    <ul>
+      <li>Player chooses letters from a-z on keyboard to guess a random letter.</li>
+      <li>Computer chooses a random value from a-z.</li>
+      <li>If the player and the computer pick the same letter the player wins.</li>
+      <li>If the player picks a different letter from the computer then player loses.</li>
+    </ul>
+
+      <h2>Calculating Scores</h2>
+      <ul>
+      <li>If player guesses the correct letter we add one to their wins and the number of guesses reset.</li>
+      <li>If player guesses the wrong letter, they lose one guess and the wrong letter is logged under guesses so far.</li>
+      <li>Process repeat until all 9 guesses are used up.</li>
+      <li>Once the player misses 9 guesses, we add one to their losses and the number of guesses reset.</li>
+      </ul>
+  
+  </div>
+
+
+<script src="assets/javascript/game.js"></script>
+</body>
+
+</html>
